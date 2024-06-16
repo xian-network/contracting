@@ -6,6 +6,7 @@ from contracting.stdlib.bridge.imports import exports as imports_exports
 from contracting.stdlib.bridge.access import exports as access_exports
 from contracting.stdlib.bridge.decimal import exports as decimal_exports
 from contracting.stdlib.bridge.crypto import exports as crypto_exports
+from contracting.stdlib.bridge.zkp import exports as zkp_exports
 
 # TODO create a module instead and return it inside of a dictionary like:
 # {
@@ -26,5 +27,6 @@ def gather():
     env.update(access_exports)
     env.update(decimal_exports)
     env.update(crypto_exports)
+    env.update(zkp_exports)
 
     return env
